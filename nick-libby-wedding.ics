@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Nick and Libby Wedding//Wedding Website//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:nick-libby-wedding-20261114@nickandlibby.com
+DTSTAMP:20260615T000000Z
+DTSTART:20261114T213000Z
+DTEND:20261115T030000Z
+SUMMARY:Nick & Libby Corbett Wedding Celebration
+LOCATION:749 Forest Mills Rd, Chesapeake, VA 23322
+DESCRIPTION:Wedding celebration for Nick and Libby Corbett. Ceremony begins at 4:30 PM.
+END:VEVENT
+END:VCALENDAR

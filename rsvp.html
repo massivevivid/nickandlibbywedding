@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSVP | Nick & Libby Corbett Wedding</title>
+  <meta name="description" content="RSVP for Nick and Libby's wedding celebration and select dinner choices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Nick and Libby wedding home">
+    <span class="brand-mark">N<span>&</span>L</span>
+    <span class="brand-text">Nick & Libby</span>
+  </a>
+  <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="directions.html">Directions</a>
+    <a href="rsvp.html">RSVP</a>
+    <a class="nav-registry" href="https://www.myregistry.com/wedding-registry/nicholas-corbett-and-libby-menden-chesapeake-va/5467457" target="_blank" rel="noopener">Registry</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero small-hero">
+    <p class="eyebrow">Celebrate with us</p>
+    <h1>RSVP</h1>
+    <p>Please let us know whether you can join us and what everyone in your party would like for dinner.</p>
+  </section>
+
+  <section class="form-shell">
+    <form id="rsvpForm" class="rsvp-form" action="https://formsubmit.co/nickandlibbywedding26@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Wedding RSVP for Nick and Libby">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://nickandlibby.com/thank-you.html">
+      <input type="hidden" id="rsvpSummary" name="RSVP Summary" value="">
+
+      <div class="form-card">
+        <h2>Your information</h2>
+        <div class="form-grid">
+          <label>Full name
+            <input type="text" name="Primary Guest Name" id="primaryName" autocomplete="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" id="primaryEmail" autocomplete="email" required>
+          </label>
+          <label>Phone number
+            <input type="tel" name="Phone" id="primaryPhone" autocomplete="tel">
+          </label>
+          <label>Will you attend?
+            <select name="Attendance" id="attendance" required>
+              <option value="">Please choose</option>
+              <option value="Joyfully accepts">Joyfully accepts</option>
+              <option value="Regretfully declines">Regretfully declines</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-card meal-card" id="mealSection">
+        <h2>Dinner choice</h2>
+        <p class="form-help">Choose a meal for yourself and add any guests who will be coming with you.</p>
+        <label>Your meal choice
+          <select name="Primary Meal Choice" id="primaryMeal">
+            <option value="">Please choose</option>
+            <option value="Steak">Steak</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Fish">Fish</option>
+          </select>
+        </label>
+
+        <div id="guestList" class="guest-list" aria-live="polite"></div>
+        <button type="button" class="button secondary add-guest" id="addGuestButton">+ Add another guest</button>
+      </div>
+
+      <div class="form-card">
+        <h2>Extra notes</h2>
+        <label>Dietary restrictions, accessibility needs, or a note for Nick and Libby
+          <textarea name="Notes" id="notes" rows="5" placeholder="Optional"></textarea>
+        </label>
+      </div>
+
+      <div class="submit-row">
+        <button class="button primary" type="submit">Send RSVP</button>
+        <p class="fine-print">Your RSVP will be emailed to Nick and Libby’s wedding email address.</p>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="script-small">Nick & Libby Corbett</p>
+  <p>November 14, 2026 • Chesapeake, Virginia</p>
+  <p><a href="mailto:nickandlibbywedding26@gmail.com">nickandlibbywedding26@gmail.com</a></p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

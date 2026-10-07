@@ -21,6 +21,7 @@ function mealOptions() {
     <option value="">Please choose</option>
     <option value="Steak">Steak</option>
     <option value="Chicken">Chicken</option>
+    <option value="Vegetarian">Vegetarian</option>
     <option value="Fish">Fish</option>
   `;
 }
